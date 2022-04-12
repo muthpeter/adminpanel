@@ -190,13 +190,13 @@ aside .sidebar a{
     gap: 1rem;
     align-items: center;
     position: relative;
-    height: 3.7rem;
+    height: 0.7rem;
     transition: all 300ms ease;
 }   
 
 aside .sidebar a span{
     font-size: 1.6rem;
-    transition: all 300ms ease;
+  
 }
 
 aside .sidebar a:last-child {
@@ -212,7 +212,7 @@ aside .sidebar a.active{
 }
 
 aside .sidebar a.active::before{
-    content: '';
+    content: "";
     width: 6px;
     height: 100%;
     background: var(--color-primary);
@@ -397,4 +397,42 @@ main .recent-orders a{
     margin: 1rem auto;
     color: var(--color-primary);
 
+}
+
+/* ==========================RIGHT========================*/
+
+.right{
+    margin-top: 1.4rem;
+}
+
+.right .top{
+    display: flex;
+    justify-content: end;
+    gap: 2rem;
+    
+}
+
+.right .top button{
+    display: none;
+}
+
+.right .theme-toggler{
+    background: var(--color-light);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 1.6rem;
+    width: 4.2rem;
+    cursor: pointer;
+    border-radius: var(--border-radius-1);
+}
+
+.right .theme-toggler span{
+    font-size: 1.2rem;
+    margin-top: 0.1rem;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
